@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Metallic Gold - Less yellow, more champagne/luxury */
+  --color-gold-300: #E5D1A1;
+  --color-gold-400: #C8AA6E;
+  --color-gold-500: #B08D55;
+  --color-gold-600: #8C6B3D;
+  
+  /* Deep Royal Purple - Cooler undertone */
+  --color-purple-900: #240E3E;
+  --color-purple-950: #120421;
+  
+  /* Cool Grays - Removing any warm/yellow tint */
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F3F4F6;
+  
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+@layer utilities {
+  .text-gold {
+    color: var(--color-gold-400);
+  }
+  .bg-gold {
+    background-color: var(--color-gold-400);
+  }
+  .border-gold {
+    border-color: var(--color-gold-400);
+  }
+  
+  /* Premium Gradients */
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, var(--color-gold-500) 0%, #F3E5AB 50%, var(--color-gold-600) 100%);
+    background-size: 200% auto;
+    transition: background-position 0.5s ease;
+  }
+  .bg-gradient-gold:hover {
+    background-position: right center;
+  }
+  
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--color-gold-600) 0%, #E6C885 50%, var(--color-gold-600) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .border-gradient-gold {
+    position: relative;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, var(--color-gold-300) 0%, var(--color-gold-500) 100%) border-box;
+    border: 1px solid transparent;
+  }
+}

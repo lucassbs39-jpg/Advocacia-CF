@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila Fernandes Advocacia | Direito Imobiliário</title>
+    <meta name="description" content="Escritório boutique especializado em Direito Imobiliário. Atuação estratégica e personalizada para garantir a segurança jurídica do seu patrimônio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo-link">
+                <img src="logo.png" alt="Camila Fernandes Advocacia" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="logo-fallback" style="display:none; font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: var(--color-purple-900);">Camila Fernandes</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#location" class="nav-link">Localização</a>
+                <a href="#testimonials" class="nav-link">Depoimentos</a>
+                <a href="https://wa.me/5547999999999" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-nav">
+                    Contato no WhatsApp
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="icon-sm">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+                <svg id="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+                <svg id="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-bg-1"></div>
+            <div class="mobile-menu-bg-2"></div>
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-nav-link">Início</a>
+                <a href="#services" class="mobile-nav-link">Serviços</a>
+                <a href="#about" class="mobile-nav-link">Sobre</a>
+                <a href="#location" class="mobile-nav-link">Localização</a>
+                <a href="#testimonials" class="mobile-nav-link">Depoimentos</a>
+                
+                <div class="mobile-menu-footer">
+                    <a href="https://wa.me/5547999999999" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-mobile">
+                        Contato no WhatsApp
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="icon-sm">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-desktop"></div>
+        <div class="hero-bg-mobile"></div>
+        
+        <div class="hero-centered-container">
+            <div class="hero-content fade-in-up">
+                <div class="hero-badge">
+                    <img src="https://flagcdn.com/w40/br.png" srcset="https://flagcdn.com/w80/br.png 2x" width="20" height="14" alt="Brasil" class="flag-icon">
+                    <span>Atendimento Online em todo o Brasil</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Defendendo seu <br>
+                    patrimônio <br>
+                    com <span class="text-italic text-gradient-gold">inteligência</span>.
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Escritório de advocacia com mais de <span class="text-underline-gold">uma década de experiência</span> em estratégias jurídicas imobiliárias inteligentes para <span class="text-underline-gold">proteger seu patrimônio</span> e <span class="text-underline-gold">seus direitos</span>.
+                </p>
+            </div>
+
+            <div class="hero-image-wrapper fade-in-scale">
+                <div class="hero-image-container">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Escritório de Advocacia Moderno" class="hero-image" referrerpolicy="no-referrer">
+                </div>
+                <div class="hero-frame"></div>
+            </div>
+
+            <div class="hero-buttons fade-in-up">
+                <a href="#contact" class="btn btn-primary btn-icon">
+                    Fale com um Especialista
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-arrow"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    Nossos Serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-bg-line"></div>
+        
+        <div class="container relative z-10">
+            <div class="row">
+                <div class="column">
+                    <div class="section-header">
+                        <div class="badge-outline">
+                            <span>Áreas de Atuação</span>
+                        </div>
+                        <h2 class="section-title">
+                            Soluções Jurídicas <span class="text-italic text-gradient-gold">Especializadas</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Atuação estratégica para proteger seu <span class="text-underline-gold">patrimônio</span>, evitar <span class="text-underline-gold">problemas legais</span> e garantir <span class="text-underline-gold">segurança em compras, vendas e contratos imobiliários</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row services-row">
+                <!-- Service 1 -->
+                <div class="column col-33">
+                    <div class="service-card fade-in-up" style="transition-delay: 0s;">
+                        <div class="service-accent-line"></div>
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="service-title">Regularização e Posse</h3>
+                        <ul class="service-list">
+                            <li><span class="dot"></span>Ação de Usucapião</li>
+                            <li><span class="dot"></span>Reintegração de Posse</li>
+                            <li><span class="dot"></span>Retificação de área</li>
+                            <li><span class="dot"></span>Desmembramento</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="column col-33">
+                    <div class="service-card fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="service-accent-line"></div>
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="service-title">Contratos e Negócios</h3>
+                        <ul class="service-list">
+                            <li><span class="dot"></span>Elaboração e Revisão</li>
+                            <li><span class="dot"></span>Análise de Risco</li>
+                            <li><span class="dot"></span>Permutas</li>
+                            <li><span class="dot"></span>Compra e Venda</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="column col-33">
+                    <div class="service-card fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="service-accent-line"></div>
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="service-title">Sucessão e Família</h3>
+                        <ul class="service-list">
+                            <li><span class="dot"></span>Inventário</li>
+                            <li><span class="dot"></span>Testamento</li>
+                            <li><span class="dot"></span>Doação com Usufruto</li>
+                            <li><span class="dot"></span>Divórcio e Partilha</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="column col-33">
+                    <div class="service-card fade-in-up" style="transition-delay: 0.3s;">
+                        <div class="service-accent-line"></div>
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="22.01"/><line x1="15" y1="22" x2="15" y2="22.01"/><line x1="9" y1="2" x2="9" y2="2.01"/><line x1="15" y1="2" x2="15" y2="2.01"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="service-title">Imobiliário Corporativo</h3>
+                        <ul class="service-list">
+                            <li><span class="dot"></span>Incorporação Imobiliária</li>
+                            <li><span class="dot"></span>Instituição de Condomínio</li>
+                            <li><span class="dot"></span>Assessoria Construtoras</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="column col-33">
+                    <div class="service-card fade-in-up" style="transition-delay: 0.4s;">
+                        <div class="service-accent-line"></div>
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="service-title">Locação e Cobrança</h3>
+                        <ul class="service-list">
+                            <li><span class="dot"></span>Cobrança de aluguel</li>
+                            <li><span class="dot"></span>Ação de Despejo</li>
+                            <li><span class="dot"></span>Ação Revisional</li>
+                            <li><span class="dot"></span>Contratos de Locação</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="column col-33">
+                    <div class="service-card fade-in-up" style="transition-delay: 0.5s;">
+                        <div class="service-accent-line"></div>
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="service-title">Contencioso Cível</h3>
+                        <ul class="service-list">
+                            <li><span class="dot"></span>Vícios construtivos</li>
+                            <li><span class="dot"></span>Rescisões contratuais</li>
+                            <li><span class="dot"></span>Execução</li>
+                            <li><span class="dot"></span>Defesa processual</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="column about-content-wrapper">
+                    <div class="about-content fade-in-right">
+                        <span class="badge-text">A Especialista</span>
+                        <h2 class="about-title">
+                            Dra. Camila <span class="text-gradient-gold">Fernandes</span>
+                        </h2>
+                        
+                        <p class="about-lead">
+                            CEO do escritório, professora de advogados e corretores de imóveis, escritora de livro, e palestrante nacional <img src="https://flagcdn.com/w40/br.png" alt="Brasil" class="inline-flag"> e internacional <img src="https://flagcdn.com/w40/us.png" alt="EUA" class="inline-flag">.
+                        </p>
+                        
+                        <p class="about-text">
+                            Com uma trajetória marcada pela excelência técnica e compromisso ético, a Dra. Camila lidera uma equipe focada em resolver complexidades jurídicas no mercado imobiliário com precisão e segurança.
+                        </p>
+
+                        <div class="about-image-wrapper" style="margin: 2rem 0;">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dra. Camila Fernandes" class="about-image" referrerpolicy="no-referrer">
+                            <div class="about-frame"></div>
+                        </div>
+
+                        <div class="credentials-grid">
+                            <div class="credential-item">
+                                <div class="dot-gold"></div>
+                                <p>Especialista em Direito Imobiliário</p>
+                            </div>
+                            <div class="credential-item">
+                                <div class="dot-gold"></div>
+                                <p>Graduada pela UNIVALI</p>
+                            </div>
+                            <div class="credential-item">
+                                <div class="dot-gold"></div>
+                                <p>Pós-Graduada em Processo Civil</p>
+                            </div>
+                            <div class="credential-item">
+                                <div class="dot-gold"></div>
+                                <p>Pós-Graduada em Direito Negocial</p>
+                            </div>
+                            <div class="credential-item">
+                                <div class="dot-gold"></div>
+                                <p>Formação em Regularização Imobiliária</p>
+                            </div>
+                            <div class="credential-item">
+                                <div class="dot-gold"></div>
+                                <p>Especialista em Incorporação</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="location-bg-1"></div>
+        <div class="location-bg-2"></div>
+
+        <div class="container relative z-10">
+            <div class="row location-row">
+                
+                <!-- Text Content -->
+                <div class="column col-50 location-text-column">
+                    
+                    <h2 class="location-title">
+                        Atendimento Online para <br>
+                        <span class="text-italic text-gradient-gold">Todo o Brasil</span>
+                    </h2>
+                    
+                    <p class="location-text">
+                        A distância não é uma barreira. Utilizamos tecnologia de ponta para realizar reuniões, audiências e assinaturas de contratos de forma totalmente digital.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            Reuniões online por videoconferência
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            Assinatura digital de contratos com validade jurídica
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            Acompanhamento processual em tempo real
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            Atendimento ágil via WhatsApp
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.me/5547999999999" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-icon btn-video">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                        Agendar Videoconferência
+                    </a>
+                </div>
+
+                <!-- Real Image iMac Mockup -->
+                <div class="column col-50 location-image-column fade-in-right">
+                    <div class="imac-wrapper">
+                        <div class="device-imac-real">
+                            <div class="imac-frame-css">
+                                <div class="imac-chin"></div>
+                            </div>
+                            <div class="imac-stand"></div>
+                            <div class="imac-base"></div>
+                            <div class="imac-screen-content">
+                                <!-- Screen Content -->
+                                <div class="video-call-interface">
+                                    <!-- Header/Top Bar -->
+                                    <div class="call-header">
+                                        <!-- Badge removed as requested -->
+                                    </div>
+
+                                    <!-- Main Video Area (Placeholder for Lawyer) -->
+                                    <div class="call-video-area">
+                                        <div class="lawyer-avatar-large">
+                                            <span>CF</span>
+                                        </div>
+                                        <div class="call-info-overlay">
+                                            <h3 class="call-name">Camila Fernandes Advocacia</h3>
+                                            <span class="call-status available">Disponível</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Bottom Controls -->
+                                    <div class="call-controls-bar">
+                                        <div class="control-button mic-on">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                                        </div>
+                                        <div class="control-button camera-on">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                                        </div>
+                                        <div class="control-button end-call">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(135deg);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map Section below -->
+            <div class="row">
+                <div class="column">
+                    <div class="map-header">
+                        <div class="divider-line"></div>
+                        <span class="divider-text">ou</span>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h3 class="map-title">
+                        Visite nosso escritório presencialmente em <span class="text-gradient-gold">Balneário Piçarras - SC</span>
+                    </h3>
+
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3566.273763926718!2d-48.68064492496733!3d-26.63973347681126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cd0e1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sR.%20Victor%20Zimmermann%2C%20768%20-%20Itacolomi%2C%20Balne%C3%A1rio%20Pi%C3%A7arras%20-%20SC%2C%2088380-000!5e0!3m2!1sen!2sbr!4v1680000000000!5m2!1sen!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização do Escritório"
+                        ></iframe>
+                        <div class="map-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="section-header">
+                        <span class="badge-text">Depoimentos</span>
+                        <h2 class="section-title text-purple-900">O que dizem nossos clientes</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="testimonials-slider-container">
+                <button class="slider-btn prev-btn" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                
+                <div class="testimonials-track-container">
+                    <div class="testimonials-track">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <p class="testimonial-text">"A clareza e o atendimento foram impecáveis. Resolveram meu problema!"</p>
+                            <div class="testimonial-footer">
+                                <p class="client-name">Ricardo Mendes</p>
+                                <p class="client-role">Investidor Imobiliário</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <p class="testimonial-text">"Senti uma segurança enorme na revisão dos contratos de venda."</p>
+                            <div class="testimonial-footer">
+                                <p class="client-name">Fernanda Oliveira</p>
+                                <p class="client-role">Corretora de Imóveis</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <p class="testimonial-text">"Profissionalismo e conhecimento técnico de alto nível."</p>
+                            <div class="testimonial-footer">
+                                <p class="client-name">Carlos Eduardo</p>
+                                <p class="client-role">Síndico</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <p class="testimonial-text">"Estava há anos tentando regularizar meu imóvel. A Dra. Camila resolveu meu problema. Recomendo!"</p>
+                            <div class="testimonial-footer">
+                                <p class="client-name">Mariana Costa</p>
+                                <p class="client-role">Proprietária</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <p class="testimonial-text">"Tive um problema sério com um contrato de locação. A equipe reverteu a situação e resolveu meu problema!"</p>
+                            <div class="testimonial-footer">
+                                <p class="client-name">Roberto Almeida</p>
+                                <p class="client-role">Comerciante</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-btn next-btn" aria-label="Próximo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+
+                    <div class="slider-dots">
+                        <button class="dot active" aria-label="Slide 1"></button>
+                        <button class="dot" aria-label="Slide 2"></button>
+                        <button class="dot" aria-label="Slide 3"></button>
+                        <button class="dot" aria-label="Slide 4"></button>
+                        <button class="dot" aria-label="Slide 5"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg-pattern"></div>
+        
+        <div class="container relative z-10">
+            <div class="row">
+                <div class="column cta-content-wrapper">
+                    <h2 class="cta-title">
+                        Precisa de orientação jurídica <br>
+                        <span class="text-italic text-gold">imediata?</span>
+                    </h2>
+                    
+                    <p class="cta-text">
+                        Clique no botão abaixo para falar diretamente com nossa equipe pelo WhatsApp. Atendimento ágil e humanizado.
+                    </p>
+                    
+                    <a href="https://wa.me/5547999999999" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-cta">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="icon-sm">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        Conversar no WhatsApp
+                    </a>
+                    <p class="cta-note">
+                        Respondemos em poucos minutos durante o horário comercial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="footer-content-centered">
+                        <div class="footer-contact-section">
+                            <h4 class="footer-heading">Contato</h4>
+                            <ul class="footer-contact">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-gold"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <span>R. Victor Zimmermann, 768<br>Balneário Piçarras - SC</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-gold"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <span>(47) 98866-1892</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="footer-bottom">
+                        <p class="copyright">
+                            &copy; <span id="year"></span> Camila Fernandes Advocacia. Todos os direitos reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
